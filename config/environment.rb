@@ -28,8 +28,8 @@ APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 APP_NAME = APP_ROOT.basename.to_s
 
 Instagram.configure do |config|
-  config.client_id = "db66081a2aad4bdeb05cd0bdb0494482"
-  config.client_secret = "c3436c85662e457cadae2af1c9c0322e"
+  config.client_id = ENV['CLIENT_ID']
+  config.client_secret = ENV['CLIENT_SECRET']
 end
 
 
