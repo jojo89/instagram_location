@@ -16,6 +16,7 @@ gem 'instagram'
 gem 'geocoder'
 
 
+
 gem 'shotgun'
 
 group :test do
