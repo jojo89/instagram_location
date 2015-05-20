@@ -11,7 +11,7 @@ get '/instagram/:location' do
     content_type :json
     []
   else
-    @instagrams = InstagramFinder.new(location).fetch_records
+    @instagrams = InstagramLocationFetcher.new(location).fetch_records
     content_type :json
     @instagrams.to_json
   end

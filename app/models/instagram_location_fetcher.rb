@@ -1,4 +1,4 @@
-class InstagramFinder
+class InstagramLocationFetcher
   def initialize(location, limit = 50)
     @location = location
     @limit = limit

@@ -11,7 +11,7 @@ describe 'Index Controller' do
   	let(:response_body) { eval(last_response.body) }
     
     before do
-      allow_any_instance_of(InstagramFinder).to receive(:fetch_records).and_return(instagram_results)
+      allow_any_instance_of(InstagramLocationFetcher).to receive(:fetch_records).and_return(instagram_results)
     end
 
     context "when there are no instagram records" do

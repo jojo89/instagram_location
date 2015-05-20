@@ -1,6 +1,6 @@
 require 'spec_helper.rb'
 
-describe InstagramFinder do
+describe InstagramLocationFetcher do
   let(:location) { double("Location", latitude: "42", longitude: "-74") }
   let(:instagram_api_response) { [OpenStruct.new(record_with_less_likes), OpenStruct.new(record_with_more_likes)] }
   let(:record_with_less_likes) {
