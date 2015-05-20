@@ -1,0 +1,12 @@
+<div id="profile" ng-if="featuredInstagram" >
+  <a href="{{featuredInstagram.link}}">
+    <img ng-src="{{ featuredInstagram.url }}" ng-show="featuredInstagram" />
+  </a>
+     <a href="{{'https://instagram.com/' + featuredInstagram.username}}">
+       
+       <h3><img class= "profile-pic" ng-src="{{ featuredInstagram.profile_picture }}" ng-show="featuredInstagram" />
+         {{featuredInstagram.username}}
+       </h3>
+     </a>
+  <div class= "description"><p>{{featuredInstagram.description}}</p></div>
+</div>

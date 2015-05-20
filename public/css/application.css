@@ -1,0 +1,59 @@
+body{
+  color: black;
+  text-align: center;
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+}
+
+a{
+  color: rgb(45, 159, 229);
+  text-decoration: none;
+}
+
+h1{
+  font-size: 65px;
+}
+
+img{
+  max-width: 400px;
+  border-radius: 19px;
+}
+
+ol{
+  width: 400px; 
+  height: 320px;
+  overflow: auto; 
+}
+
+.highlight a{
+  color: rgb(182, 43, 75);
+  font-size: 19px;
+}
+
+.display{
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 34px;
+   text-align: left;
+   width: 1000px;
+}
+
+#list{
+  width: 400px;
+  margin-left: 34px;
+  float: left;
+  overflow: scroll;
+}
+
+img.profile-pic {
+  width: 23px;
+  margin-bottom: -6px;
+}
+
+#profile{
+  float: right;
+  border-radius: 19px;
+}
+
+.description{
+  width: 500px;
+}

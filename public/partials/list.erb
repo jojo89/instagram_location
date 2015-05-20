@@ -1,0 +1,5 @@
+<div id="list" ng-if="featuredInstagram">
+  <ol>
+     <li ng-class="{'highlight': instagram == featuredInstagram}" ng-click="changedFeatured(instagram)"  ng-repeat="instagram in instagrams | limitTo: 50 " ><a href="javascript:void(0)">{{instagram.username}} - {{instagram.likes }} likes</a></li>
+  </ol>
+</div>
