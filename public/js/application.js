@@ -6,7 +6,9 @@ app.factory('instagram', ['$resource',
     return $resource('/instagram/:location', {}, {
       query: {method:'GET', params:{location: "location"}, isArray: true }
     });
-  }]);
+  }
+]);
+
 app.controller('MapController', function($http, $scope, instagram, $interval, $timeout) {
     controller = this
     $scope.instagrams = [];
@@ -24,10 +26,10 @@ app.controller('MapController', function($http, $scope, instagram, $interval, $t
       $scope.featuredInstagram = instagram;
     }
 })
-.directive('formage', function() {
+.directive('search', function() {
   return {
     restrict: 'E',
-    templateUrl: 'partials/formage.erb'
+    templateUrl: 'partials/search.erb'
   };
 })
 .directive('list', function() {

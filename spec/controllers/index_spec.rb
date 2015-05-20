@@ -1,11 +1,5 @@
 require 'spec_helper.rb'
-require 'io/console'
-describe 'The HelloWorld App' do
-  include Rack::Test::Methods
-
-  def app
-    Sinatra::Application
-  end
+describe 'Index Controller' do
 
   it "Contains the application headline" do
     get '/'
@@ -14,6 +8,8 @@ describe 'The HelloWorld App' do
   end
 
   describe "GET '/instagram'" do
+  	let(:response_body) { eval(last_response.body) }
+    
     before do
       allow_any_instance_of(InstagramFinder).to receive(:fetch_records).and_return(instagram_results)
     end
@@ -23,8 +19,8 @@ describe 'The HelloWorld App' do
       it "returns an empty array" do
           get '/instagram/Chicago'
           expect(last_response).to be_ok
-          expect(eval(last_response.body)).to be_instance_of(Array)
-          expect(eval(last_response.body)).to be_empty
+          expect(response_body).to be_instance_of(Array)
+          expect(response_body).to be_empty
       end
     end
 
@@ -33,8 +29,8 @@ describe 'The HelloWorld App' do
       it "returns an empty array" do
           get '/instagram/Chicago'
           expect(last_response).to be_ok
-          expect(eval(last_response.body)).to be_instance_of(Array)
-          expect(eval(last_response.body).count).to eq(3)
+          expect(response_body).to be_instance_of(Array)
+          expect(response_body.count).to eq(3)
       end
     end
   end
