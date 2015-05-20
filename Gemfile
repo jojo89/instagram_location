@@ -14,8 +14,6 @@ gem 'rake'
 gem 'less'
 gem 'instagram'
 gem 'geocoder'
-gem 'mongoid', '~> 4', github: 'mongoid/mongoid'
-gem 'bson_ext'
 
 
 gem 'shotgun'
