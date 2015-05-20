@@ -13,7 +13,7 @@ require 'pathname'
 require 'yaml'
 require 'active_record'
 require 'logger'
-require 'Instagram'
+require 'instagram'
 require 'geocoder'
 require 'sinatra'
 require "sinatra/reloader" if development?
