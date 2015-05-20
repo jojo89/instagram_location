@@ -69,7 +69,7 @@ describe InstagramFinder do
   context "when the response doesn't contain a caption" do
     let(:instagram_api_response) { [OpenStruct.new(record_with_no_caption)] }
 
-    it "sorts the records in decsecnding order by likes" do
+    it "the attributes do not contain a description" do
   	  expect(subject.fetch_records[0]).to eq(extracted_attributes_with_no_caption)
     end	
   end
