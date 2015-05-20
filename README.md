@@ -1,8 +1,5 @@
 # Url Shortener
 
-##dependencies
-* Ruby version ruby "2.2.1"
-
 ### Development
 
 from the directory you would like to store the project.
@@ -50,11 +47,12 @@ project is hosted at http://instagram-by-city.herokuapp.com/
 
 
 ### Notes 
-  This is a simple sinatra app that makes queries to the instagram api based on a location that passed from the user.
-  The front-end is written in angular that displays a list of the top instagram records for the given area. It updates 
+  This is a simple sinatra app that makes queries to the instagram api based on a location that is passed from the user.
+  The front-end is written in angular and it displays a list of the top instagram records for the given area. It 
   features the tweet in the profile directive when the user clicks on the list item. The banner updates with the name of the location that is being searched. 
-  there is no database the instagram response is simply parsed for the attributes that are important to the 
-  front-end and sorted by thier like count.
+  there is no database, the instagram response is simply parsed for the attributes that are important to the 
+  front-end and sorted by their like count.
+
 
 
 
